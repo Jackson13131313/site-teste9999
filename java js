@@ -1,0 +1,13 @@
+// JS opcional: abre imagem em tela cheia simples
+document.addEventListener("click", (e) => {
+  if (e.target.matches(".galeria img")) {
+    const src = e.target.getAttribute("src");
+    const overlay = document.createElement("div");
+    overlay.style = `
+      position:fixed;inset:0;background:rgba(0,0,0,.8);
+      display:flex;align-items:center;justify-content:center;z-index:9999;`;
+    overlay.innerHTML = `<img src="${src}" style="max-width:90%;max-height:90%;border-radius:8px" />`;
+    overlay.addEventListener("click", () => overlay.remove());
+    document.body.appendChild(overlay);
+  }
+});
