@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memorial de {{NOME}}</title>
+
+  <!-- Google Font opcional -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cabeçalho simples -->
+  <header class="header">
+    <div class="container">
+      <h1 id="nome">Miguel Luiz Pereira</h1>
+      <p class="datas">
+        <span id="nascimento">03 / 07 / 2007</span> &nbsp;|&nbsp;
+        <span id="falecimento">23 / 04 / 2024</span>
+      </p>
+    </div>
+  </header>
+
+  <!-- Foto principal -->
+  <section class="hero">
+    <img src="assets/hero.jpg" alt="Foto principal de {{NOME}}" />
+  </section>
+
+  <!-- Versículo / frase -->
+  <section class="verso">
+    <blockquote id="versiculo">
+      Apocalipse 12:7-8 — “E houve guerra no céu...”
+    </blockquote>
+  </section>
+
+  <!-- História / biografia -->
+  <section class="historia" id="historia">
+    <div class="container">
+      <h2>História</h2>
+      <p>Nasceu no dia 3 de julho de 2007, filho de Marcelo e Adélia...</p>
+      <p>Miguel era amor e luz...</p>
+    </div>
+  </section>
+
+  <!-- Galeria de fotos -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <h2>Memórias</h2>
+      <div class="grid">
+        <img src="assets/img1.jpg" alt="Foto 1" />
+        <img src="assets/img2.jpg" alt="Foto 2" />
+        <img src="assets/img3.jpg" alt="Foto 3" />
+        <img src="assets/img4.jpg" alt="Foto 4" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Áudio homenagem -->
+  <section class="audio">
+    <div class="container">
+      <h2>Áudio Homenagem</h2>
+      <audio controls>
+        <source src="assets/audio.mp3" type="audio/mpeg" />
+        Seu navegador não suporta o elemento <code>audio</code>.
+      </audio>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 {{Seu Nome ou Empresa}}</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
