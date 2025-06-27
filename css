@@ -1,0 +1,32 @@
+/* Reset simples */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Inter", sans-serif; line-height: 1.6; color: #333; }
+
+/* Containers */
+.container { width: 90%; max-width: 900px; margin: 0 auto; }
+
+/* Cabeçalho */
+.header { background: #fafafa; padding: 2rem 0; text-align: center; }
+.header h1 { font-size: 2.4rem; margin-bottom: 0.25rem; }
+.header .datas { font-weight: 300; }
+
+/* Hero */
+.hero img { width: 100%; height: auto; display: block; }
+
+/* Verso */
+.verso { background: #f3f3f3; padding: 1.5rem 0; text-align: center; }
+.verso blockquote { font-style: italic; font-weight: 600; }
+
+/* Seções */
+section { padding: 2.5rem 0; }
+section h2 { font-size: 1.8rem; margin-bottom: 1rem; text-align: center; }
+
+/* Galeria */
+.galeria .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; }
+.galeria img { width: 100%; border-radius: 6px; }
+
+/* Áudio */
+.audio audio { width: 100%; }
+
+/* Rodapé */
+.footer { background: #fafafa; text-align: center; padding: 1.5rem 0; font-size: 0.875rem; }
